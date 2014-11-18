@@ -37,7 +37,7 @@ public class Bank implements Strategy {
 			}
 
 		}
-		if (Skill.WOODCUTTING.getRealLevel() <= 80) {
+		if (Skill.WOODCUTTING.getRealLevel() < 80) {
 			Keyboard.getInstance().sendKeys("::empty");
 			Main.emptied += 1;
 			Time.sleep(2000);
